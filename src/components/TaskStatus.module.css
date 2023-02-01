@@ -1,0 +1,44 @@
+.statusBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 736px;
+  height: 54px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.statusBar section {
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusBar section p {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.statusBar section:first-child p {
+  color: var(--blue);
+}
+
+.statusBar section:nth-child(2) p {
+  color: var(--purple);
+}
+
+.statusBar section span {
+  font-size: 0.75rem;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 0 8px 0 8px;
+  border-radius: 8px;
+  width: 25px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
