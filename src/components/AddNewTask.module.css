@@ -9,10 +9,36 @@ section {
 section input {
   width: 638px;
   height: 54px;
-  padding-left: 16px;
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  color: var(--gray-100);
+  font-size: 0.875rem;
 }
 
 section button {
   width: 90px;
   height: 52px;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s;
+  border: 1px solid var(--gray-700);
 }
+
+section button:hover {
+  filter: brightness(120%);
+}
+
+
+section button span {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
