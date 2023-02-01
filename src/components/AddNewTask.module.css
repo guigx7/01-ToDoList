@@ -33,7 +33,7 @@
 }
 
 .newTaskForm button:hover {
-  filter: brightness(120%);
+  background: var(--blue);
 }
 
 

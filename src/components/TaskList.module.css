@@ -1,0 +1,15 @@
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.listContainer section {
+  width: 740px;
+  border-radius: 6px;
+  border-top: 1px solid var(--gray-400);
+}
+
+
+

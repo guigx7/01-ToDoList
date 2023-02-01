@@ -1,0 +1,31 @@
+.noTasks {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.noTasks svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-400);
+  margin-bottom: 16px;
+}
+
+.noTasks h2 {
+  text-align: center;
+  color: var(--gray-300);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+.noTasks h3 {
+  text-align: center;
+  color: var(--gray-300);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+}
