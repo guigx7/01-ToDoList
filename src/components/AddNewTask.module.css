@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -27px;
+  gap: 8px;
+}
+
+section input {
+  width: 638px;
+  height: 54px;
+  padding-left: 16px;
+}
+
+section button {
+  width: 90px;
+  height: 52px;
+}
