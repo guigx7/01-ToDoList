@@ -1,9 +1,11 @@
 .noTasks {
-  margin-top: 64px;
+  padding-top: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 6px;
+  border-top: 1px solid var(--gray-400);
 }
 
 .noTasks svg{
@@ -29,3 +31,4 @@
   font-size: 1rem;
   line-height: 140%;
 }
+

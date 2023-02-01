@@ -7,7 +7,7 @@ export function TaskStatus() {
           <p>Tarefas criadas</p> <span>0</span>
         </section>
         <section>
-          <p>Concluídas</p> <span>0</span>
+          <p>Concluídas</p> <span>0 de 0</span>
         </section>
       </div>
     )

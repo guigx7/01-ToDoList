@@ -8,5 +8,6 @@ export function NoTasks() {
       <h2>Você ainda não tem tarefas cadastradas</h2>
       <h3>Crie tarefas e organize seus itens a fazer</h3>
     </div>
+
   )
 } 
