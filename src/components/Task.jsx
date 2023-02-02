@@ -1,20 +1,22 @@
 import { Trash } from 'phosphor-react'
-import { v4 as uuidv4 } from 'uuid';
 import styles from './Task.module.css'
 
-export function Task() {
-  const id = uuidv4();
+export function Task({task, onDeleteTask}) {
+
+  function handleDeleteTask() {
+    onDeleteTask(task.id);
+  }
 
   return (
     <div className={styles.task}>
       <section>
         <div className={styles.customCheckbox}>
-          <input id={id} type="checkbox" />
-          <label htmlFor={id}></label>
+          <input id={task.id} type="checkbox" />
+          <label htmlFor={task.id}></label>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>{task.content}</p>
       </section>
-      <button><Trash size={18} /></button>
+      <button onClick={handleDeleteTask}><Trash size={18} /></button>
     </div>
   )
 } 
