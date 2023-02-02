@@ -21,21 +21,38 @@ export function App() {
 
   function deleteTask(id) {
     const tasksWithoutDeletedOne = tasks.filter(task => {
-      console.log(id);
-      console.log(task.id);
       return task.id !== id;
     })
 
     setTasks(tasksWithoutDeletedOne);
-    console.log(tasksWithoutDeletedOne);
   }
 
+  function handleTaskDone(id) {
+    const newTasks = tasks.map(task => {
+      if (task.id === id) {
+        task.checked = !task.checked;
+      }
+      return task;
+    })
+    setTasks(newTasks)
+  }
+  
+  function handleTaskCounter() {
+    let counter = 0;
+    tasks.map(task => {
+      if(task.checked === true){
+        counter = counter + 1;
+      }
+    })
+    return counter;
+  }
+  
   return (
     <>
-      <Header/>
-      <AddNewTask handleCreateNewTask={handleCreateNewTask}/>
-      <TaskStatus tasks={tasks}/>
-      <TaskList tasks={tasks} deleteTask={deleteTask}/>
+      <Header />
+      <AddNewTask handleCreateNewTask={handleCreateNewTask} />
+      <TaskStatus tasks={tasks} handleTaskCounter={handleTaskCounter} />
+      <TaskList tasks={tasks} deleteTask={deleteTask} handleTaskDone={handleTaskDone} />
     </>
   )
 }

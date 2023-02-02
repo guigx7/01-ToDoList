@@ -11,9 +11,9 @@ export function AddNewTask({ handleCreateNewTask }) {
     setNewTask('');
   }
 
-  useEffect(() => {
-    console.log(newTask);
-  }, [newTask])
+  // useEffect(() => {
+  //   console.log(newTask);
+  // }, [newTask])
   
 
   function handleNewTaskChange() {

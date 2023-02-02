@@ -1,6 +1,6 @@
 import styles from './TaskStatus.module.css'
 
-export function TaskStatus({tasks}) {
+export function TaskStatus({tasks, handleTaskCounter}) {
 
   function taskCounter() {
     return tasks.length;
@@ -12,7 +12,7 @@ export function TaskStatus({tasks}) {
           <p>Tarefas criadas</p> <span>{taskCounter()}</span>
         </section>
         <section>
-          <p>Concluídas</p> <span>0 de {taskCounter()}</span>
+          <p>Concluídas</p> <span>{handleTaskCounter()} de {taskCounter()}</span>
         </section>
       </div>
     )
