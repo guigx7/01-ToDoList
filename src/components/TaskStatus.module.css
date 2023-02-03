@@ -44,5 +44,22 @@
 @media (max-width: 800px) {
   .statusBar {
     width: 420px;
+    margin-top: 40px; 
+  }
+}
+
+@media (max-width: 430px) {
+  .statusBar {
+    width: 300px;
+    margin-top: 30px; 
+  }
+
+  .statusBar section p {
+    font-size: 0.7rem;
+
+  }
+
+  .statusBar section span {
+    font-size: 0.65rem;
   }
 }

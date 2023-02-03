@@ -17,5 +17,16 @@
   }
 }
 
+@media (max-width: 430px) {
+  .listContainer {
+    margin-top: 14px;
+  }
+
+  .listContainer section{
+    width: 300px;
+    font-size: 0.8rem;
+  }
+}
+
 
 

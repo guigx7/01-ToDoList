@@ -53,3 +53,19 @@
     height: 52px;
   }
 }
+
+@media (max-width: 430px) {
+  .newTaskForm input {
+    width: 250px;
+    height: 54px;
+  }
+  
+  .newTaskForm button {
+    width: 50px;
+    height: 52px;
+  }
+
+  .newTaskForm button span {
+    display: none;
+  }
+}
