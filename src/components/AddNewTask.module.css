@@ -15,6 +15,7 @@
   border: 1px solid var(--gray-700);
   color: var(--gray-100);
   font-size: 0.875rem;
+  user-zoom: fixed;
 }
 
 .newTaskForm button {

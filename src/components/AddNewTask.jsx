@@ -24,9 +24,9 @@ export function AddNewTask({ handleCreateNewTask }) {
     event.target.setCustomValidity('Impossível criar uma tarefa vazia, preencha o campo e clique em criar.');
   }
 
-  handleTouchStart = (event) => {
-    event.preventDefault();
-  };
+  // function handleTouchStart() {
+  //   event.preventDefault();
+  // };
 
   return (
     <form onSubmit={handleSubmit} className={styles.newTaskForm}>
@@ -37,7 +37,7 @@ export function AddNewTask({ handleCreateNewTask }) {
         value={newTask}
         onChange={handleNewTaskChange}
         onInvalid={handleTaskInvalid}
-        onTouchStart={handleTouchStart}
+        // onTouchStart={handleTouchStart}
         required
       />
       <button type='submit' >
