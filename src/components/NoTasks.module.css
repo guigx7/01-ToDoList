@@ -32,3 +32,13 @@
   line-height: 140%;
 }
 
+@media (max-width: 430px) {
+  .noTasks h2 {
+    font-size: 0.875rem;
+  }
+  
+  .noTasks h3 {
+    font-size: 0.875rem;
+  }
+}
+
