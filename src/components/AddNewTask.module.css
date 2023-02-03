@@ -42,3 +42,14 @@
   font-weight: 700;
 }
 
+@media (max-width: 800px) {
+  .newTaskForm input {
+    width: 350px;
+    height: 54px;
+  }
+  
+  .newTaskForm button {
+    width: 70px;
+    height: 52px;
+  }
+}

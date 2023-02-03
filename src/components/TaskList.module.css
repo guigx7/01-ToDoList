@@ -11,5 +11,11 @@
   border-top: 1px solid var(--gray-400); */
 }
 
+@media (max-width: 800px) {
+  .listContainer section{
+    width: 410px;
+  }
+}
+
 
 
