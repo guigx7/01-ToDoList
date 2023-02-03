@@ -14,7 +14,6 @@ export function AddNewTask({ handleCreateNewTask }) {
   // useEffect(() => {
   //   console.log(newTask);
   // }, [newTask])
-  
 
   function handleNewTaskChange() {
     setNewTask(event.target.value);
@@ -25,16 +24,20 @@ export function AddNewTask({ handleCreateNewTask }) {
     event.target.setCustomValidity('Impossível criar uma tarefa vazia, preencha o campo e clique em criar.');
   }
 
+  handleTouchStart = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <form onSubmit={handleSubmit} className={styles.newTaskForm}>
       <input
         type='text'
         placeholder='Adicione uma nova tarefa'
         name="task"
-        autocomplete="off"
         value={newTask}
         onChange={handleNewTaskChange}
         onInvalid={handleTaskInvalid}
+        onTouchStart={handleTouchStart}
         required
       />
       <button type='submit' >
