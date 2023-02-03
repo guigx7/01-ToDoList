@@ -31,6 +31,7 @@ export function AddNewTask({ handleCreateNewTask }) {
         type='text'
         placeholder='Adicione uma nova tarefa'
         name="task"
+        autocomplete="off"
         value={newTask}
         onChange={handleNewTaskChange}
         onInvalid={handleTaskInvalid}
